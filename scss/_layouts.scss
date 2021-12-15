@@ -1,0 +1,123 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $main-font-color;
+}
+
+.fullscreen-header{
+    
+    height: 100vh;
+    @include flexCenter;
+    flex-direction: column;
+    background-image:linear-gradient(to right bottom, rgba(14, 12, 12, 0.822), rgba(255, 255, 0, 0.192)), url('img/header.jpg');
+    background-size: cover;
+    background-position-x: 80%;
+    background-position-y: center;
+    
+}
+
+.nav{
+    background-color: $main-color;
+    padding: .4rem .4rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+
+    @include responsive(small){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        
+
+        &-item{
+            text-decoration: none;
+            color: white;
+            margin-left: 0;
+
+            @include responsive(small){
+                margin-left: .8rem;
+            }
+
+           
+
+
+            &:hover{
+                background-color: lighten($main-font-color,10);
+            }
+        }
+    }
+
+    
+}
+
+.section{
+    
+    margin: 1rem 0;
+    padding: 1rem;
+
+    &-title{
+        text-align: center;
+        margin: 1rem;
+        color: $section-color;
+    }
+
+    &--accent{
+        background-color: $main-color;
+
+        
+    }
+}
+
+
+.hakkimda-grid{
+    display: grid;
+    grid-template-columns: minmax(auto, 500px);
+    row-gap: 2rem;
+    padding: .5rem;
+
+    @include responsive(medium){
+        grid-template-columns: repeat(2, minmax(auto,500px));
+        justify-content: center
+    }
+
+    &__item{
+         @include flexCenter;
+    }
+
+    &__resim{
+        width: 20%;
+        
+    }
+
+    &__yazi{
+        font-size: 0.9rem;
+        color: $section-color;
+        line-height: 1.5;
+        margin-left: .5rem;
+    }
+}
+
+
+.program-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include responsive(medium){
+        flex-direction: row;        
+    }
+    
+}
+
+
