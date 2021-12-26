@@ -131,8 +131,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(14, 12, 12, 0.822)), to(rgba(255, 255, 0, 0.192))), url("/img/header.jpg");
-  background-image: linear-gradient(to right bottom, rgba(14, 12, 12, 0.822), rgba(255, 255, 0, 0.192)), url("/img/header.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(14, 12, 12, 0.822)), to(rgba(255, 255, 0, 0.192))), url("img/header.jpg");
+  background-image: linear-gradient(to right bottom, rgba(14, 12, 12, 0.822), rgba(255, 255, 0, 0.192)), url("img/header.jpg");
   background-size: cover;
   background-position-x: 80%;
   background-position-y: center;
@@ -335,8 +335,8 @@ body {
 }
 
 .program-card--bc {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("/img/program.jpg");
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/img/program.jpg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("img/program.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("img/program.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
